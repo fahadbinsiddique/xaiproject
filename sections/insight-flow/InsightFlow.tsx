@@ -128,7 +128,7 @@ export default function InsightFlow() {
                     title={step.title}
                     description={step.description}
                     icon={step.icon}
-                    metrics={step.metrics}
+                    metrics={step.metrics as Record<string, string>}
                     isActive={progress >= idx / (steps.length - 1)}
                   />
                 </div>
