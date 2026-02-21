@@ -100,6 +100,7 @@ export default function Particles() {
           count={COUNT}
           array={positions}
           itemSize={3}
+          args={[positions, 3]}
         />
         <bufferAttribute
           attach="attributes-color"
