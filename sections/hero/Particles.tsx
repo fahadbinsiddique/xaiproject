@@ -107,12 +107,14 @@ export default function Particles() {
           count={COUNT}
           array={colors}
           itemSize={3}
+          args={[colors, 3]}
         />
         <bufferAttribute
           attach="attributes-size"
           count={COUNT}
           array={sizes}
           itemSize={1}
+          args={[sizes, 1]}
         />
       </bufferGeometry>
 
